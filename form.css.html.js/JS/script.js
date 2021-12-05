@@ -59,7 +59,9 @@ function onSuccess(input){
     messageEle.style.visibility="hidden"; 
     parent.classList.remove("error");
     parent.classList.add("success");  
+     return window.open("http://www.aztu.edu.az/azp/#/azp/main.do")
 }
+
 function onError(input,message){
     let parent=input.parentElement;
     let messageEle=parent.querySelector("small");
